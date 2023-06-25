@@ -1,0 +1,155 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
+body {
+    font-family: Verdana, sans-serif;
+    color: black;
+    line-height: 1.5;
+    
+}
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2em;
+    
+}
+/* fixed navigation bar */
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* navigation bar  and header*/
+.logo h2 {
+    text-shadow: 0 0 5px gray, 0 0 5px white;
+}
+.navigation, .header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2937;
+    color: #fff;
+    padding: 1.5rem;
+    line-height: 1.5;
+
+}
+.header-text{
+    max-width: 70%;
+}
+#nav  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2rem;
+
+}
+#nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+#nav a:hover {
+    background-color: #223a5d;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+/* random card section*/
+.container, 
+.cards,
+.items {
+    display: flex;
+    padding: 1rem;
+}
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+    
+}
+.container .cards {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+   
+}
+.items {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 5px solid #3882F6;
+    border-radius: 5px;
+    
+    
+}
+
+.items img {
+    width: auto;
+    max-height: 12rem;
+}
+/* quotes section */
+.quotes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 80rem;
+    height: 100%;
+    padding: 10rem 5rem;
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 2em;
+    font-style: italic;
+}
+/* Sign up section */
+.callToAction {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    height: 10rem;
+    border-radius: 20px;
+    margin: 30px 50px;
+    padding: 2rem;
+    color: #ffffff;
+    gap: 2rem;
+}
+/* Sign up Button */
+button {
+    border: 3px solid #ffffff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: #3882F6 ;
+    font-weight: 900;
+    color: #ffffff;
+    
+    }
+/* footer section */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: #fff;
+    padding: 1.4rem;
+}
+/* media query */
+@media screen and (max-width: 600px) {
+    .header .header-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 2em;
+        
+       }
+      }

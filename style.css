@@ -230,3 +230,29 @@ h3 {
     color: lightgray;
     text-decoration: underline;
 }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* for mobile devices */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0 auto;
+    }
+    .cart-options, .nav-address, .panel{
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .deal-and-offers {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+    .cards {
+        width: 98%;
+    }
+    .footer-menu {
+        flex-flow: column wrap;
+        gap: 1rem;
+    }
+  }

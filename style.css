@@ -66,6 +66,7 @@ body {
     width: 780px;
     height: 40px;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 .nav-search-bar:hover {
     border: 3px solid orange;
